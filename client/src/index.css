@@ -2,53 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-/* LIGHT MODE */
+/* LIGHT MODE - Cosmic Theme */
 :root {
   --button-outline: rgba(0,0,0, .10);
   --badge-outline: rgba(0,0,0, .05);
   --opaque-button-border-intensity: -8;
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
-  --background: 0 0% 100%;
-  --foreground: 0 0% 9%;
-  --border: 0 0% 90%;
-  --card: 0 0% 98%;
-  --card-foreground: 0 0% 9%;
-  --card-border: 0 0% 94%;
-  --sidebar: 0 0% 96%;
-  --sidebar-foreground: 0 0% 9%;
-  --sidebar-border: 0 0% 92%;
-  --sidebar-primary: 220 85% 45%;
-  --sidebar-primary-foreground: 220 85% 98%;
-  --sidebar-accent: 0 0% 92%;
-  --sidebar-accent-foreground: 0 0% 9%;
-  --sidebar-ring: 220 85% 45%;
-  --popover: 0 0% 94%;
-  --popover-foreground: 0 0% 9%;
-  --popover-border: 0 0% 88%;
+  --background: 230 50% 98%;
+  --foreground: 230 30% 10%;
+  --border: 230 20% 88%;
+  --card: 230 40% 96%;
+  --card-foreground: 230 30% 10%;
+  --card-border: 230 20% 90%;
+  --sidebar: 230 35% 94%;
+  --sidebar-foreground: 230 30% 10%;
+  --sidebar-border: 230 20% 88%;
+  --sidebar-primary: 250 85% 60%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 230 30% 90%;
+  --sidebar-accent-foreground: 230 30% 10%;
+  --sidebar-ring: 250 85% 60%;
+  --popover: 230 40% 95%;
+  --popover-foreground: 230 30% 10%;
+  --popover-border: 230 20% 86%;
   --primary: 250 85% 60%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 0 0% 88%;
-  --secondary-foreground: 0 0% 9%;
-  --muted: 0 0% 90%;
-  --muted-foreground: 0 0% 35%;
-  --accent: 220 15% 92%;
-  --accent-foreground: 220 15% 12%;
-  --destructive: 0 75% 42%;
-  --destructive-foreground: 0 75% 98%;
-  --input: 0 0% 75%;
+  --secondary: 230 25% 88%;
+  --secondary-foreground: 230 30% 15%;
+  --muted: 230 20% 90%;
+  --muted-foreground: 230 15% 40%;
+  --accent: 168 80% 45%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 350 85% 55%;
+  --destructive-foreground: 0 0% 100%;
+  --input: 230 20% 75%;
   --ring: 250 85% 60%;
   --chart-1: 250 85% 60%;
-  --chart-2: 160 80% 45%;
+  --chart-2: 168 80% 45%;
   --chart-3: 340 80% 55%;
   --chart-4: 45 90% 50%;
   --chart-5: 200 85% 55%;
-  --tdd-red: 0 75% 55%;
-  --tdd-green: 145 70% 45%;
+  --tdd-red: 350 85% 55%;
+  --tdd-green: 160 80% 45%;
   --tdd-refactor: 280 70% 60%;
   --agent-active: 160 80% 45%;
   --agent-idle: 220 15% 50%;
-  --agent-error: 0 75% 55%;
+  --agent-error: 350 85% 55%;
+  --aurora-violet: 250 85% 60%;
+  --neon-cyan: 168 100% 64%;
+  --magenta-pulse: 340 100% 65%;
+  --midnight-navy: 230 70% 3%;
   --font-sans: Inter, system-ui, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: JetBrains Mono, monospace;
@@ -64,81 +68,73 @@
   --tracking-normal: 0em;
   --spacing: 0.25rem;
 
-/* Fallback for older browsers */
   --sidebar-primary-border: hsl(var(--sidebar-primary));
   --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  /* Fallback for older browsers */
   --sidebar-accent-border: hsl(var(--sidebar-accent));
   --sidebar-accent-border: hsl(from hsl(var(--sidebar-accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  /* Fallback for older browsers */
   --primary-border: hsl(var(--primary));
   --primary-border: hsl(from hsl(var(--primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  /* Fallback for older browsers */
   --secondary-border: hsl(var(--secondary));
   --secondary-border: hsl(from hsl(var(--secondary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  /* Fallback for older browsers */
   --muted-border: hsl(var(--muted));
   --muted-border: hsl(from hsl(var(--muted)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  /* Fallback for older browsers */
   --accent-border: hsl(var(--accent));
   --accent-border: hsl(from hsl(var(--accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  /* Fallback for older browsers */
   --destructive-border: hsl(var(--destructive));
   --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
 }
 
+/* DARK MODE - Cosmic Mission Control Theme */
 .dark {
   --button-outline: rgba(255,255,255, .10);
   --badge-outline: rgba(255,255,255, .05);
   --opaque-button-border-intensity: 9;
   --elevate-1: rgba(255,255,255, .04);
   --elevate-2: rgba(255,255,255, .09);
-  --background: 0 0% 8%;
+  --background: 230 70% 3%;
   --foreground: 0 0% 95%;
-  --border: 0 0% 18%;
-  --card: 0 0% 10%;
+  --border: 230 40% 15%;
+  --card: 230 50% 7%;
   --card-foreground: 0 0% 95%;
-  --card-border: 0 0% 14%;
-  --sidebar: 0 0% 12%;
+  --card-border: 230 40% 12%;
+  --sidebar: 230 55% 5%;
   --sidebar-foreground: 0 0% 95%;
-  --sidebar-border: 0 0% 16%;
-  --sidebar-primary: 220 85% 55%;
-  --sidebar-primary-foreground: 220 85% 98%;
-  --sidebar-accent: 0 0% 16%;
+  --sidebar-border: 230 40% 12%;
+  --sidebar-primary: 250 85% 65%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 230 40% 12%;
   --sidebar-accent-foreground: 0 0% 95%;
-  --sidebar-ring: 220 85% 55%;
-  --popover: 0 0% 14%;
+  --sidebar-ring: 250 85% 65%;
+  --popover: 230 50% 8%;
   --popover-foreground: 0 0% 95%;
-  --popover-border: 0 0% 18%;
+  --popover-border: 230 40% 14%;
   --primary: 250 85% 65%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 0 0% 18%;
+  --secondary: 230 40% 14%;
   --secondary-foreground: 0 0% 95%;
-  --muted: 0 0% 16%;
-  --muted-foreground: 0 0% 65%;
-  --accent: 220 15% 18%;
-  --accent-foreground: 220 15% 88%;
-  --destructive: 0 75% 42%;
-  --destructive-foreground: 0 75% 98%;
-  --input: 0 0% 30%;
+  --muted: 230 35% 12%;
+  --muted-foreground: 230 15% 60%;
+  --accent: 168 80% 55%;
+  --accent-foreground: 230 70% 5%;
+  --destructive: 350 85% 55%;
+  --destructive-foreground: 0 0% 100%;
+  --input: 230 30% 20%;
   --ring: 250 85% 65%;
   --chart-1: 250 85% 65%;
-  --chart-2: 160 80% 55%;
+  --chart-2: 168 80% 55%;
   --chart-3: 340 80% 60%;
   --chart-4: 45 90% 60%;
   --chart-5: 200 85% 60%;
-  --tdd-red: 0 75% 60%;
-  --tdd-green: 145 70% 55%;
+  --tdd-red: 350 85% 60%;
+  --tdd-green: 160 80% 55%;
   --tdd-refactor: 280 70% 65%;
   --agent-active: 160 80% 55%;
-  --agent-idle: 220 15% 55%;
-  --agent-error: 0 75% 60%;
+  --agent-idle: 230 20% 45%;
+  --agent-error: 350 85% 60%;
+  --aurora-violet: 250 85% 65%;
+  --neon-cyan: 168 100% 64%;
+  --magenta-pulse: 340 100% 65%;
+  --midnight-navy: 230 70% 3%;
   --shadow-2xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
   --shadow-xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
   --shadow-sm: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 1px 2px -1px hsl(0 0% 0% / 0.00);
@@ -148,31 +144,18 @@
   --shadow-xl: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 8px 10px -1px hsl(0 0% 0% / 0.00);
   --shadow-2xl: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
 
-/* Fallback for older browsers */
   --sidebar-primary-border: hsl(var(--sidebar-primary));
   --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  /* Fallback for older browsers */
   --sidebar-accent-border: hsl(var(--sidebar-accent));
   --sidebar-accent-border: hsl(from hsl(var(--sidebar-accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  /* Fallback for older browsers */
   --primary-border: hsl(var(--primary));
   --primary-border: hsl(from hsl(var(--primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  /* Fallback for older browsers */
   --secondary-border: hsl(var(--secondary));
   --secondary-border: hsl(from hsl(var(--secondary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  /* Fallback for older browsers */
   --muted-border: hsl(var(--muted));
   --muted-border: hsl(from hsl(var(--muted)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  /* Fallback for older browsers */
   --accent-border: hsl(var(--accent));
   --accent-border: hsl(from hsl(var(--accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  /* Fallback for older browsers */
   --destructive-border: hsl(var(--destructive));
   --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
 }
@@ -187,76 +170,60 @@
   }
 }
 
-/**
- * Using the elevate system.
- * Automatic contrast adjustment.
- *
- * <element className="hover-elevate" />
- * <element className="active-elevate-2" />
- *
- * // Using the tailwind utility when a data attribute is "on"
- * <element className="toggle-elevate data-[state=on]:toggle-elevated" />
- * // Or manually controlling the toggle state
- * <element className="toggle-elevate toggle-elevated" />
- *
- * Elevation systems have to handle many states.
- * - not-hovered, vs. hovered vs. active  (three mutually exclusive states)
- * - toggled or not
- * - focused or not (this is not handled with these utilities)
- *
- * Even without handling focused or not, this is six possible combinations that
- * need to be distinguished from eachother visually.
- */
-@layer utilities {
+/* Starfield animation */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
 
-  /* Hide ugly search cancel button in Chrome until we can style it properly */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px hsl(var(--aurora-violet) / 0.3); }
+  50% { box-shadow: 0 0 40px hsl(var(--aurora-violet) / 0.5); }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@layer utilities {
   input[type="search"]::-webkit-search-cancel-button {
     @apply hidden;
   }
 
-  /* Placeholder styling for contentEditable div */
   [contenteditable][data-placeholder]:empty::before {
     content: attr(data-placeholder);
     color: hsl(var(--muted-foreground));
     pointer-events: none;
   }
 
-  /* .no-default-hover-elevate/no-default-active-elevate is an escape hatch so consumers of
-   * buttons/badges can remove the automatic brightness adjustment on interactions
-   * and program their own. */
   .no-default-hover-elevate {}
-
   .no-default-active-elevate {}
 
-
-  /**
-   * Toggleable backgrounds go behind the content. Hoverable/active goes on top.
-   * This way they can stack/compound. Both will overlap the parent's borders!
-   * So borders will be automatically adjusted both on toggle, and hover/active,
-   * and they will be compounded.
-   */
   .toggle-elevate::before,
   .toggle-elevate-2::before {
     content: "";
     pointer-events: none;
     position: absolute;
     inset: 0px;
-    /*border-radius: inherit;   match rounded corners */
     border-radius: inherit;
     z-index: -1;
-    /* sits behind content but above backdrop */
   }
 
   .toggle-elevate.toggle-elevated::before {
     background-color: var(--elevate-2);
   }
 
-  /* If there's a 1px border, adjust the inset so that it covers that parent's border */
   .border.toggle-elevate::before {
     inset: -1px;
   }
 
-  /* Does not work on elements with overflow:hidden! */
   .hover-elevate:not(.no-default-hover-elevate),
   .active-elevate:not(.no-default-active-elevate),
   .hover-elevate-2:not(.no-default-hover-elevate),
@@ -273,10 +240,8 @@
     pointer-events: none;
     position: absolute;
     inset: 0px;
-    /*border-radius: inherit;   match rounded corners */
     border-radius: inherit;
     z-index: 999;
-    /* sits in front of content */
   }
 
   .hover-elevate:hover:not(.no-default-hover-elevate)::after,
@@ -289,7 +254,6 @@
     background-color: var(--elevate-2);
   }
 
-  /* If there's a 1px border, adjust the inset so that it covers that parent's border */
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after,
   .border.active-elevate:not(.no-active-interaction-elevate)::after,
   .border.hover-elevate-2:not(.no-hover-interaction-elevate)::after,
@@ -297,4 +261,116 @@
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
   }
+
+  /* Glassmorphism utilities */
+  .glass {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl;
+  }
+
+  .glass-nav {
+    @apply backdrop-blur-xl bg-background/80 border-b border-white/10;
+  }
+
+  /* Glow utilities */
+  .glow-violet {
+    box-shadow: 0 0 30px hsl(var(--aurora-violet) / 0.4);
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 30px hsl(var(--neon-cyan) / 0.4);
+  }
+
+  .glow-magenta {
+    box-shadow: 0 0 30px hsl(var(--magenta-pulse) / 0.4);
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--aurora-violet)), hsl(var(--neon-cyan)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-warm {
+    background: linear-gradient(135deg, hsl(var(--aurora-violet)), hsl(var(--magenta-pulse)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Animation utilities */
+  .animate-twinkle {
+    animation: twinkle 3s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  /* Cosmic background */
+  .bg-cosmic {
+    background: radial-gradient(ellipse at top, hsl(250 60% 15% / 0.5) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom right, hsl(340 60% 15% / 0.3) 0%, transparent 50%),
+                hsl(var(--midnight-navy));
+  }
+
+  .bg-cosmic-gradient {
+    background: linear-gradient(180deg, 
+      hsl(var(--midnight-navy)) 0%,
+      hsl(230 60% 8%) 50%,
+      hsl(var(--midnight-navy)) 100%
+    );
+  }
+
+  /* Holographic border */
+  .border-holographic {
+    border-image: linear-gradient(135deg, hsl(var(--aurora-violet)), hsl(var(--neon-cyan)), hsl(var(--magenta-pulse))) 1;
+  }
+}
+
+/* Starfield background */
+.starfield {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.starfield::before,
+.starfield::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, white, transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 90px 40px, white, transparent),
+    radial-gradient(2px 2px at 130px 80px, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 160px 120px, white, transparent),
+    radial-gradient(2px 2px at 200px 60px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 240px 150px, white, transparent),
+    radial-gradient(2px 2px at 280px 30px, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 320px 90px, white, transparent),
+    radial-gradient(2px 2px at 360px 140px, rgba(255,255,255,0.8), transparent);
+  background-size: 400px 200px;
+  animation: twinkle 4s ease-in-out infinite;
+}
+
+.starfield::after {
+  background-position: 200px 100px;
+  animation-delay: -2s;
 }

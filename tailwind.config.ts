@@ -91,6 +91,18 @@ export default {
           idle: "hsl(var(--agent-idle) / <alpha-value>)",
           error: "hsl(var(--agent-error) / <alpha-value>)",
         },
+        aurora: {
+          violet: "hsl(var(--aurora-violet) / <alpha-value>)",
+        },
+        neon: {
+          cyan: "hsl(var(--neon-cyan) / <alpha-value>)",
+        },
+        magenta: {
+          pulse: "hsl(var(--magenta-pulse) / <alpha-value>)",
+        },
+        midnight: {
+          navy: "hsl(var(--midnight-navy) / <alpha-value>)",
+        },
       },
       fontFamily: {
         sans: ["var(--font-sans)"],
