@@ -81,6 +81,16 @@ export default {
           busy: "rgb(239 68 68)",
           offline: "rgb(156 163 175)",
         },
+        tdd: {
+          red: "hsl(var(--tdd-red) / <alpha-value>)",
+          green: "hsl(var(--tdd-green) / <alpha-value>)",
+          refactor: "hsl(var(--tdd-refactor) / <alpha-value>)",
+        },
+        agent: {
+          active: "hsl(var(--agent-active) / <alpha-value>)",
+          idle: "hsl(var(--agent-idle) / <alpha-value>)",
+          error: "hsl(var(--agent-error) / <alpha-value>)",
+        },
       },
       fontFamily: {
         sans: ["var(--font-sans)"],
